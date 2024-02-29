@@ -17,4 +17,4 @@ The objective of this exercise is to create logic behind an application and to d
 
 ![Assurance](./assurances/docs/orange.png)
 
-This exercises was designed by the O'clock school.
+These exercises was designed by the O'clock school.
