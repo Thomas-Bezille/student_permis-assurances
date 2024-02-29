@@ -27,9 +27,29 @@
     <h1>Résumé de l'inscription</h1>
     <h2>Inscription de </h2>
     <div class="answer">
+      <?php
+
+      if (isset($_GET['firstname'])) {
+        if ($_GET['firstname'] !== '') {
+          echo $_GET['firstname'] . ' ';
+        } else {
+          echo 'Merci de renseigner votre prénom ';
+        }
+      }
+
+      if (isset($_GET['lastname'])) {
+        if ($_GET['lastname'] !== '') {
+          echo $_GET['lastname'];
+        } else {
+          echo 'Merci de renseigner votre nom';
+        }
+      }
+
+      ?>
     </div>
     <h2>Autorisation </h2>
     <div class="answer">
+
     </div>
   </aside>
 </body>
