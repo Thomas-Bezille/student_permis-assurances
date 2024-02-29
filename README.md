@@ -1,6 +1,6 @@
 # Permis / Assurances AT2 - CP7 : Develop the back-end part of a web or mobile web application.
 
-The objective of this exercise is to create logic behind an application and to dynamize the elements according to the results obtained.
+The objectives of these exercises are to create logic behind an application and to dynamize the elements according to the results obtained.
 
 ## Built with
 
