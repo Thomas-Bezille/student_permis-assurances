@@ -49,7 +49,27 @@
     </div>
     <h2>Autorisation </h2>
     <div class="answer">
+      <?php
 
+      if (isset($_GET['age'])) {
+        if ($_GET['age'] !== '') {
+          if ($_GET['age'] > 0) {
+            if ($_GET['age'] < 16) {
+              echo 'Impossible de s\'inscrire pour le moment, vous pourrez vous inscrire au code dans ' . 16 - $_GET['age'] . ' ans et au permis dans ' . 18 - $_GET['age'] . ' ans';
+            } elseif ($_GET['age'] < 18) {
+              echo 'Vous pouvez vous inscrire au code mais pas au permis, vous pourrez vous inscrire au permis dans ' . 18 - $_GET['age'] . ' ans';
+            } else {
+              echo 'Vous pouvez vous inscrire au code et au permis';
+            }
+          } else {
+            echo 'Votre age ne peut pas être négatif';
+          }
+        } else {
+          echo 'Merci de renseigner votre age';
+        }
+      }
+
+      ?>
     </div>
   </aside>
 </body>
